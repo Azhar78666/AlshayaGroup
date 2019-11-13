@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [AlshayaGroup]]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Alshaya_Export_Xlsx_Report(failed)(failed)">
+    <parameter name="URL_Footlocker_AE" value="https://footlocker.ae/en/"/>
+    <classes>
+      <class name="AlshayaExportFunctionality.Export_Footlocker_AE">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeTest"/>
+          <include name="LoginPage"/>
+          <include name="beforeClass"/>
+          <include name="HandleThePopUpBox"/>
+          <include name="beforeMethod"/>
+          <include name="SignInClick"/>
+          <include name="HomePage"/>
+          <include name="tearDownFramework"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="URLLink"/>
+          <include name="setUpFramework"/>
+        </methods>
+      </class> <!-- AlshayaExportFunctionality.Export_Footlocker_AE -->
+    </classes>
+  </test> <!-- Alshaya_Export_Xlsx_Report(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [AlshayaGroup]] -->

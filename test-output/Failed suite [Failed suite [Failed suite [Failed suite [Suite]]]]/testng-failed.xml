@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [Suite]]]]]">
+  <test thread-count="5" name="Test(failed)(failed)(failed)(failed)(failed)">
+    <classes>
+      <class name="AlshayaExportFunctionality.Export_Potterybarn_AE">
+        <methods>
+          <include name="afterClass"/>
+          <include name="HomePage"/>
+          <include name="tearDownFramework"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="browser"/>
+          <include name="beforeClass"/>
+          <include name="setUpFramework"/>
+          <include name="beforeMethod"/>
+          <include name="LoginPage"/>
+        </methods>
+      </class> <!-- AlshayaExportFunctionality.Export_Potterybarn_AE -->
+    </classes>
+  </test> <!-- Test(failed)(failed)(failed)(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [Suite]]]]] -->

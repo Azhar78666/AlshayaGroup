@@ -1,0 +1,727 @@
+<html>
+<head>
+<title>TestNG:  Alshaya_Export_Xlsx_Report</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Alshaya_Export_Xlsx_Report</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>53/3/5</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Nov 12 11:55:49 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>778 seconds (778117 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_bathandbodyworks_KW.HandleThePopUpBox()'><b>HandleThePopUpBox</b><br>Test class: AlshayaExportFunctionality.Export_bathandbodyworks_KW</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;close-popup&quot; id=&quot;close-popup&quot;&gt;...&lt;/div&gt; is not clickable at point (1279, 13). Other element would receive the click: &lt;iframe name=&quot;notification-frame-~197158202&quot; id=&quot;webklipper-publisher-widget-container-notification-frame&quot; frameborder=&quot;0&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot; style=&quot;display: block; z-index: 16776272; width: 100%; visibility: visible; overflow: visible; position: absolute; height: 47px; top: 0px; bottom: auto; left: 0px;&quot; data-notification-layout-id=&quot;~fg00aad&quot; data-notification-layout-name=&quot;undefined&quot;&gt;&lt;/iframe&gt;
+  (Session info: chrome=78.0.3904.97)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-UFMLBTPI&apos;, ip: &apos;192.168.10.116&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\91971\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 477c9ed355732d7bf2de4b54c2226805
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.AlshayaGroup.TestSetup.TestSetup.waitClick(TestSetup.java:196)
+	at AlshayaExportFunctionality.Export_bathandbodyworks_KW.HandleThePopUpBox(Export_bathandbodyworks_KW.java:36)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1372817363", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1372817363'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;close-popup&quot; id=&quot;close-popup&quot;&gt;...&lt;/div&gt; is not clickable at point (1279, 13). Other element would receive the click: &lt;iframe name=&quot;notification-frame-~197158202&quot; id=&quot;webklipper-publisher-widget-container-notification-frame&quot; frameborder=&quot;0&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot; style=&quot;display: block; z-index: 16776272; width: 100%; visibility: visible; overflow: visible; position: absolute; height: 47px; top: 0px; bottom: auto; left: 0px;&quot; data-notification-layout-id=&quot;~fg00aad&quot; data-notification-layout-name=&quot;undefined&quot;&gt;&lt;/iframe&gt;
+  (Session info: chrome=78.0.3904.97)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-UFMLBTPI&apos;, ip: &apos;192.168.10.116&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\91971\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 477c9ed355732d7bf2de4b54c2226805
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.AlshayaGroup.TestSetup.TestSetup.waitClick(TestSetup.java:196)
+	at AlshayaExportFunctionality.Export_bathandbodyworks_KW.HandleThePopUpBox(Export_bathandbodyworks_KW.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>7</td>
+<td>AlshayaExportFunctionality.Export_bathandbodyworks_KW@687e99d8</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_HNM_SA.HomePage()'><b>HomePage</b><br>Test class: AlshayaExportFunctionality.Export_HNM_SA</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[(text()=&apos;Commerce&apos;)]&quot;}
+  (Session info: chrome=78.0.3904.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-UFMLBTPI&apos;, ip: &apos;192.168.10.116&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\91971\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 477c9ed355732d7bf2de4b54c2226805
+*** Element info: {Using=xpath, value=//*[(text()=&apos;Commerce&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.AlshayaGroup.TestSetup.TestSetup.click(TestSetup.java:209)
+	at AlshayaExportFunctionality.Export_HNM_SA.HomePage(Export_HNM_SA.java:58)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace306889029", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace306889029'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[(text()=&apos;Commerce&apos;)]&quot;}
+  (Session info: chrome=78.0.3904.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-UFMLBTPI&apos;, ip: &apos;192.168.10.116&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\91971\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 477c9ed355732d7bf2de4b54c2226805
+*** Element info: {Using=xpath, value=//*[(text()=&apos;Commerce&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.AlshayaGroup.TestSetup.TestSetup.click(TestSetup.java:209)
+	at AlshayaExportFunctionality.Export_HNM_SA.HomePage(Export_HNM_SA.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>60</td>
+<td>AlshayaExportFunctionality.Export_HNM_SA@49e5f737</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_Footlocker_AE.SignInClick()'><b>SignInClick</b><br>Test class: AlshayaExportFunctionality.Export_Footlocker_AE</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/en/user/login&quot; class=&quot;signin-link gtm-sign-in&quot; data-drupal-link-system-path=&quot;user/login&quot;&gt;...&lt;/a&gt; is not clickable at point (1373, 41). Other element would receive the click: &lt;div class=&quot;popup-window&quot; id=&quot;popup&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=78.0.3904.97)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-UFMLBTPI&apos;, ip: &apos;192.168.10.116&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\91971\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 477c9ed355732d7bf2de4b54c2226805
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.AlshayaGroup.TestSetup.TestSetup.click(TestSetup.java:209)
+	at AlshayaExportFunctionality.Export_Footlocker_AE.SignInClick(Export_Footlocker_AE.java:43)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1987154353", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1987154353'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/en/user/login&quot; class=&quot;signin-link gtm-sign-in&quot; data-drupal-link-system-path=&quot;user/login&quot;&gt;...&lt;/a&gt; is not clickable at point (1373, 41). Other element would receive the click: &lt;div class=&quot;popup-window&quot; id=&quot;popup&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=78.0.3904.97)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-UFMLBTPI&apos;, ip: &apos;192.168.10.116&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\91971\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 477c9ed355732d7bf2de4b54c2226805
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.AlshayaGroup.TestSetup.TestSetup.click(TestSetup.java:209)
+	at AlshayaExportFunctionality.Export_Footlocker_AE.SignInClick(Export_Footlocker_AE.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>AlshayaExportFunctionality.Export_Footlocker_AE@5c671d7f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_bathandbodyworks_AE.HandleThePopUpBox()'><b>HandleThePopUpBox</b><br>Test class: AlshayaExportFunctionality.Export_bathandbodyworks_AE</td>
+<td></td>
+<td>10</td>
+<td>AlshayaExportFunctionality.Export_bathandbodyworks_AE@1f59a598</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_Potterybarn_KW.HandleThePopUpBox()'><b>HandleThePopUpBox</b><br>Test class: AlshayaExportFunctionality.Export_Potterybarn_KW</td>
+<td></td>
+<td>6</td>
+<td>AlshayaExportFunctionality.Export_Potterybarn_KW@1e178745</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_HNM_AE.HandleThePopUpBox()'><b>HandleThePopUpBox</b><br>Test class: AlshayaExportFunctionality.Export_HNM_AE</td>
+<td></td>
+<td>6</td>
+<td>AlshayaExportFunctionality.Export_HNM_AE@26b3fd41</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_Victoriassecret_AE.HandleThePopUpBox()'><b>HandleThePopUpBox</b><br>Test class: AlshayaExportFunctionality.Export_Victoriassecret_AE</td>
+<td></td>
+<td>6</td>
+<td>AlshayaExportFunctionality.Export_Victoriassecret_AE@7494f96a</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_MotherCare_SA.HandleThePopUpBox()'><b>HandleThePopUpBox</b><br>Test class: AlshayaExportFunctionality.Export_MotherCare_SA</td>
+<td></td>
+<td>6</td>
+<td>AlshayaExportFunctionality.Export_MotherCare_SA@561b6512</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_bathandbodyworks_SA.HandleThePopUpBox()'><b>HandleThePopUpBox</b><br>Test class: AlshayaExportFunctionality.Export_bathandbodyworks_SA</td>
+<td></td>
+<td>6</td>
+<td>AlshayaExportFunctionality.Export_bathandbodyworks_SA@2e377400</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_HNM_KW.HandleThePopUpBox()'><b>HandleThePopUpBox</b><br>Test class: AlshayaExportFunctionality.Export_HNM_KW</td>
+<td></td>
+<td>16</td>
+<td>AlshayaExportFunctionality.Export_HNM_KW@1757cd72</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_MotherCare_KW.HandleThePopUpBox()'><b>HandleThePopUpBox</b><br>Test class: AlshayaExportFunctionality.Export_MotherCare_KW</td>
+<td></td>
+<td>6</td>
+<td>AlshayaExportFunctionality.Export_MotherCare_KW@445b295b</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_HNM_SA.HandleThePopUpBox()'><b>HandleThePopUpBox</b><br>Test class: AlshayaExportFunctionality.Export_HNM_SA</td>
+<td></td>
+<td>7</td>
+<td>AlshayaExportFunctionality.Export_HNM_SA@49e5f737</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_Footlocker_AE.HandleThePopUpBox()'><b>HandleThePopUpBox</b><br>Test class: AlshayaExportFunctionality.Export_Footlocker_AE</td>
+<td></td>
+<td>9</td>
+<td>AlshayaExportFunctionality.Export_Footlocker_AE@5c671d7f</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_MotherCare_AE.HandleThePopUpBox()'><b>HandleThePopUpBox</b><br>Test class: AlshayaExportFunctionality.Export_MotherCare_AE</td>
+<td></td>
+<td>6</td>
+<td>AlshayaExportFunctionality.Export_MotherCare_AE@757277dc</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_Footlocker_SA.HandleThePopUpBox()'><b>HandleThePopUpBox</b><br>Test class: AlshayaExportFunctionality.Export_Footlocker_SA</td>
+<td></td>
+<td>6</td>
+<td>AlshayaExportFunctionality.Export_Footlocker_SA@e4487af</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_bathandbodyworks_AE.HomePage()'><b>HomePage</b><br>Test class: AlshayaExportFunctionality.Export_bathandbodyworks_AE</td>
+<td></td>
+<td>7</td>
+<td>AlshayaExportFunctionality.Export_bathandbodyworks_AE@1f59a598</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_Potterybarn_KW.HomePage()'><b>HomePage</b><br>Test class: AlshayaExportFunctionality.Export_Potterybarn_KW</td>
+<td></td>
+<td>4</td>
+<td>AlshayaExportFunctionality.Export_Potterybarn_KW@1e178745</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_Potterybarn_SA.HomePage()'><b>HomePage</b><br>Test class: AlshayaExportFunctionality.Export_Potterybarn_SA</td>
+<td></td>
+<td>5</td>
+<td>AlshayaExportFunctionality.Export_Potterybarn_SA@192c3f1e</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_HNM_AE.HomePage()'><b>HomePage</b><br>Test class: AlshayaExportFunctionality.Export_HNM_AE</td>
+<td></td>
+<td>8</td>
+<td>AlshayaExportFunctionality.Export_HNM_AE@26b3fd41</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_Victoriassecret_AE.HomePage()'><b>HomePage</b><br>Test class: AlshayaExportFunctionality.Export_Victoriassecret_AE</td>
+<td></td>
+<td>5</td>
+<td>AlshayaExportFunctionality.Export_Victoriassecret_AE@7494f96a</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_MotherCare_SA.HomePage()'><b>HomePage</b><br>Test class: AlshayaExportFunctionality.Export_MotherCare_SA</td>
+<td></td>
+<td>9</td>
+<td>AlshayaExportFunctionality.Export_MotherCare_SA@561b6512</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_bathandbodyworks_SA.HomePage()'><b>HomePage</b><br>Test class: AlshayaExportFunctionality.Export_bathandbodyworks_SA</td>
+<td></td>
+<td>13</td>
+<td>AlshayaExportFunctionality.Export_bathandbodyworks_SA@2e377400</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_HNM_KW.HomePage()'><b>HomePage</b><br>Test class: AlshayaExportFunctionality.Export_HNM_KW</td>
+<td></td>
+<td>7</td>
+<td>AlshayaExportFunctionality.Export_HNM_KW@1757cd72</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_MotherCare_KW.HomePage()'><b>HomePage</b><br>Test class: AlshayaExportFunctionality.Export_MotherCare_KW</td>
+<td></td>
+<td>6</td>
+<td>AlshayaExportFunctionality.Export_MotherCare_KW@445b295b</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_MotherCare_AE.HomePage()'><b>HomePage</b><br>Test class: AlshayaExportFunctionality.Export_MotherCare_AE</td>
+<td></td>
+<td>5</td>
+<td>AlshayaExportFunctionality.Export_MotherCare_AE@757277dc</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_Footlocker_SA.HomePage()'><b>HomePage</b><br>Test class: AlshayaExportFunctionality.Export_Footlocker_SA</td>
+<td></td>
+<td>6</td>
+<td>AlshayaExportFunctionality.Export_Footlocker_SA@e4487af</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_Potterybarn_AE.HomePage()'><b>HomePage</b><br>Test class: AlshayaExportFunctionality.Export_Potterybarn_AE</td>
+<td></td>
+<td>5</td>
+<td>AlshayaExportFunctionality.Export_Potterybarn_AE@6aaceffd</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_Footlocker_KW.HomePage()'><b>HomePage</b><br>Test class: AlshayaExportFunctionality.Export_Footlocker_KW</td>
+<td></td>
+<td>5</td>
+<td>AlshayaExportFunctionality.Export_Footlocker_KW@c86b9e3</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_bathandbodyworks_AE.LoginPage()'><b>LoginPage</b><br>Test class: AlshayaExportFunctionality.Export_bathandbodyworks_AE<br>Parameters: brajendra.singh@pimcore.com, brajendra@321</td>
+<td></td>
+<td>7</td>
+<td>AlshayaExportFunctionality.Export_bathandbodyworks_AE@1f59a598</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_Potterybarn_KW.LoginPage()'><b>LoginPage</b><br>Test class: AlshayaExportFunctionality.Export_Potterybarn_KW<br>Parameters: brajendra.singh@pimcore.com, brajendra@321</td>
+<td></td>
+<td>7</td>
+<td>AlshayaExportFunctionality.Export_Potterybarn_KW@1e178745</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_Potterybarn_SA.LoginPage()'><b>LoginPage</b><br>Test class: AlshayaExportFunctionality.Export_Potterybarn_SA<br>Parameters: brajendra.singh@pimcore.com, brajendra@321</td>
+<td></td>
+<td>5</td>
+<td>AlshayaExportFunctionality.Export_Potterybarn_SA@192c3f1e</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_HNM_AE.LoginPage()'><b>LoginPage</b><br>Test class: AlshayaExportFunctionality.Export_HNM_AE<br>Parameters: brajendra.singh@pimcore.com, brajendra@321</td>
+<td></td>
+<td>8</td>
+<td>AlshayaExportFunctionality.Export_HNM_AE@26b3fd41</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_Victoriassecret_AE.LoginPage()'><b>LoginPage</b><br>Test class: AlshayaExportFunctionality.Export_Victoriassecret_AE<br>Parameters: brajendra.singh@pimcore.com, brajendra@321</td>
+<td></td>
+<td>7</td>
+<td>AlshayaExportFunctionality.Export_Victoriassecret_AE@7494f96a</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_MotherCare_SA.LoginPage()'><b>LoginPage</b><br>Test class: AlshayaExportFunctionality.Export_MotherCare_SA<br>Parameters: brajendra.singh@pimcore.com, brajendra@321</td>
+<td></td>
+<td>10</td>
+<td>AlshayaExportFunctionality.Export_MotherCare_SA@561b6512</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_bathandbodyworks_SA.LoginPage()'><b>LoginPage</b><br>Test class: AlshayaExportFunctionality.Export_bathandbodyworks_SA<br>Parameters: brajendra.singh@pimcore.com, brajendra@321</td>
+<td></td>
+<td>6</td>
+<td>AlshayaExportFunctionality.Export_bathandbodyworks_SA@2e377400</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_HNM_KW.LoginPage()'><b>LoginPage</b><br>Test class: AlshayaExportFunctionality.Export_HNM_KW<br>Parameters: brajendra.singh@pimcore.com, brajendra@321</td>
+<td></td>
+<td>7</td>
+<td>AlshayaExportFunctionality.Export_HNM_KW@1757cd72</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_MotherCare_KW.LoginPage()'><b>LoginPage</b><br>Test class: AlshayaExportFunctionality.Export_MotherCare_KW<br>Parameters: brajendra.singh@pimcore.com, brajendra@321</td>
+<td></td>
+<td>7</td>
+<td>AlshayaExportFunctionality.Export_MotherCare_KW@445b295b</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_HNM_SA.LoginPage()'><b>LoginPage</b><br>Test class: AlshayaExportFunctionality.Export_HNM_SA<br>Parameters: brajendra.singh@pimcore.com, brajendra@321</td>
+<td></td>
+<td>10</td>
+<td>AlshayaExportFunctionality.Export_HNM_SA@49e5f737</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_MotherCare_AE.LoginPage()'><b>LoginPage</b><br>Test class: AlshayaExportFunctionality.Export_MotherCare_AE<br>Parameters: brajendra.singh@pimcore.com, brajendra@321</td>
+<td></td>
+<td>8</td>
+<td>AlshayaExportFunctionality.Export_MotherCare_AE@757277dc</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_Footlocker_SA.LoginPage()'><b>LoginPage</b><br>Test class: AlshayaExportFunctionality.Export_Footlocker_SA<br>Parameters: brajendra.singh@pimcore.com, brajendra@321</td>
+<td></td>
+<td>5</td>
+<td>AlshayaExportFunctionality.Export_Footlocker_SA@e4487af</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_Potterybarn_AE.LoginPage()'><b>LoginPage</b><br>Test class: AlshayaExportFunctionality.Export_Potterybarn_AE<br>Parameters: brajendra.singh@pimcore.com, brajendra@321</td>
+<td></td>
+<td>6</td>
+<td>AlshayaExportFunctionality.Export_Potterybarn_AE@6aaceffd</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_Footlocker_KW.LoginPage()'><b>LoginPage</b><br>Test class: AlshayaExportFunctionality.Export_Footlocker_KW<br>Parameters: brajendra.singh@pimcore.com, brajendra@321</td>
+<td></td>
+<td>6</td>
+<td>AlshayaExportFunctionality.Export_Footlocker_KW@c86b9e3</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_bathandbodyworks_AE.SignInClick()'><b>SignInClick</b><br>Test class: AlshayaExportFunctionality.Export_bathandbodyworks_AE</td>
+<td></td>
+<td>1</td>
+<td>AlshayaExportFunctionality.Export_bathandbodyworks_AE@1f59a598</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_Potterybarn_KW.SignInClick()'><b>SignInClick</b><br>Test class: AlshayaExportFunctionality.Export_Potterybarn_KW</td>
+<td></td>
+<td>1</td>
+<td>AlshayaExportFunctionality.Export_Potterybarn_KW@1e178745</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_Potterybarn_SA.SignInClick()'><b>SignInClick</b><br>Test class: AlshayaExportFunctionality.Export_Potterybarn_SA</td>
+<td></td>
+<td>1</td>
+<td>AlshayaExportFunctionality.Export_Potterybarn_SA@192c3f1e</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_HNM_AE.SignInClick()'><b>SignInClick</b><br>Test class: AlshayaExportFunctionality.Export_HNM_AE</td>
+<td></td>
+<td>1</td>
+<td>AlshayaExportFunctionality.Export_HNM_AE@26b3fd41</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_Victoriassecret_AE.SignInClick()'><b>SignInClick</b><br>Test class: AlshayaExportFunctionality.Export_Victoriassecret_AE</td>
+<td></td>
+<td>4</td>
+<td>AlshayaExportFunctionality.Export_Victoriassecret_AE@7494f96a</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_MotherCare_SA.SignInClick()'><b>SignInClick</b><br>Test class: AlshayaExportFunctionality.Export_MotherCare_SA</td>
+<td></td>
+<td>2</td>
+<td>AlshayaExportFunctionality.Export_MotherCare_SA@561b6512</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_bathandbodyworks_SA.SignInClick()'><b>SignInClick</b><br>Test class: AlshayaExportFunctionality.Export_bathandbodyworks_SA</td>
+<td></td>
+<td>1</td>
+<td>AlshayaExportFunctionality.Export_bathandbodyworks_SA@2e377400</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_HNM_KW.SignInClick()'><b>SignInClick</b><br>Test class: AlshayaExportFunctionality.Export_HNM_KW</td>
+<td></td>
+<td>1</td>
+<td>AlshayaExportFunctionality.Export_HNM_KW@1757cd72</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_MotherCare_KW.SignInClick()'><b>SignInClick</b><br>Test class: AlshayaExportFunctionality.Export_MotherCare_KW</td>
+<td></td>
+<td>2</td>
+<td>AlshayaExportFunctionality.Export_MotherCare_KW@445b295b</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_HNM_SA.SignInClick()'><b>SignInClick</b><br>Test class: AlshayaExportFunctionality.Export_HNM_SA</td>
+<td></td>
+<td>1</td>
+<td>AlshayaExportFunctionality.Export_HNM_SA@49e5f737</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_MotherCare_AE.SignInClick()'><b>SignInClick</b><br>Test class: AlshayaExportFunctionality.Export_MotherCare_AE</td>
+<td></td>
+<td>5</td>
+<td>AlshayaExportFunctionality.Export_MotherCare_AE@757277dc</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_Footlocker_SA.SignInClick()'><b>SignInClick</b><br>Test class: AlshayaExportFunctionality.Export_Footlocker_SA</td>
+<td></td>
+<td>1</td>
+<td>AlshayaExportFunctionality.Export_Footlocker_SA@e4487af</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_Potterybarn_AE.SignInClick()'><b>SignInClick</b><br>Test class: AlshayaExportFunctionality.Export_Potterybarn_AE</td>
+<td></td>
+<td>1</td>
+<td>AlshayaExportFunctionality.Export_Potterybarn_AE@6aaceffd</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_Footlocker_KW.SignInClick()'><b>SignInClick</b><br>Test class: AlshayaExportFunctionality.Export_Footlocker_KW</td>
+<td></td>
+<td>6</td>
+<td>AlshayaExportFunctionality.Export_Footlocker_KW@c86b9e3</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_Footlocker_AE.HomePage()'><b>HomePage</b><br>Test class: AlshayaExportFunctionality.Export_Footlocker_AE</td>
+<td><div><pre>java.lang.Throwable: Method Export_Footlocker_AE.HomePage()[pri:4, instance:AlshayaExportFunctionality.Export_Footlocker_AE@5c671d7f] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1930401429", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1930401429'><pre>java.lang.Throwable: Method Export_Footlocker_AE.HomePage()[pri:4, instance:AlshayaExportFunctionality.Export_Footlocker_AE@5c671d7f] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>AlshayaExportFunctionality.Export_Footlocker_AE@5c671d7f</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_bathandbodyworks_KW.HomePage()'><b>HomePage</b><br>Test class: AlshayaExportFunctionality.Export_bathandbodyworks_KW</td>
+<td><div><pre>java.lang.Throwable: Method Export_bathandbodyworks_KW.HomePage()[pri:4, instance:AlshayaExportFunctionality.Export_bathandbodyworks_KW@687e99d8] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace836614448", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace836614448'><pre>java.lang.Throwable: Method Export_bathandbodyworks_KW.HomePage()[pri:4, instance:AlshayaExportFunctionality.Export_bathandbodyworks_KW@687e99d8] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>AlshayaExportFunctionality.Export_bathandbodyworks_KW@687e99d8</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_Footlocker_AE.LoginPage()'><b>LoginPage</b><br>Test class: AlshayaExportFunctionality.Export_Footlocker_AE</td>
+<td><div><pre>java.lang.Throwable: Method Export_Footlocker_AE.LoginPage(java.lang.String, java.lang.String)[pri:3, instance:AlshayaExportFunctionality.Export_Footlocker_AE@5c671d7f] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace347572726", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace347572726'><pre>java.lang.Throwable: Method Export_Footlocker_AE.LoginPage(java.lang.String, java.lang.String)[pri:3, instance:AlshayaExportFunctionality.Export_Footlocker_AE@5c671d7f] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>AlshayaExportFunctionality.Export_Footlocker_AE@5c671d7f</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_bathandbodyworks_KW.LoginPage()'><b>LoginPage</b><br>Test class: AlshayaExportFunctionality.Export_bathandbodyworks_KW</td>
+<td><div><pre>java.lang.Throwable: Method Export_bathandbodyworks_KW.LoginPage(java.lang.String, java.lang.String)[pri:3, instance:AlshayaExportFunctionality.Export_bathandbodyworks_KW@687e99d8] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace132461369", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace132461369'><pre>java.lang.Throwable: Method Export_bathandbodyworks_KW.LoginPage(java.lang.String, java.lang.String)[pri:3, instance:AlshayaExportFunctionality.Export_bathandbodyworks_KW@687e99d8] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>AlshayaExportFunctionality.Export_bathandbodyworks_KW@687e99d8</td></tr>
+<tr>
+<td title='AlshayaExportFunctionality.Export_bathandbodyworks_KW.SignInClick()'><b>SignInClick</b><br>Test class: AlshayaExportFunctionality.Export_bathandbodyworks_KW</td>
+<td><div><pre>java.lang.Throwable: Method Export_bathandbodyworks_KW.SignInClick()[pri:2, instance:AlshayaExportFunctionality.Export_bathandbodyworks_KW@687e99d8] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1827710791", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1827710791'><pre>java.lang.Throwable: Method Export_bathandbodyworks_KW.SignInClick()[pri:2, instance:AlshayaExportFunctionality.Export_bathandbodyworks_KW@687e99d8] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>AlshayaExportFunctionality.Export_bathandbodyworks_KW@687e99d8</td></tr>
+</table><p>
+</body>
+</html>

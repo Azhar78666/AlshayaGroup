@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AlshayaGroup]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Alshaya_Export_Xlsx_Report(failed)">
+    <parameter name="URL_Potterybarn_SA" value="https://www.potterybarn.com.sa/en/"/>
+    <parameter name="URL_bathandbodyworks_AE" value="https://www.bathandbodyworks.ae/en/"/>
+    <parameter name="URL_MotherCare_AE" value="https://www.mothercare.ae/en/"/>
+    <parameter name="URL_Potterybarn_KW" value="https://www.potterybarn.com.kw/en/"/>
+    <parameter name="URL_bathandbodyworks_KW" value="https://www.bathandbodyworks.com.kw/en/"/>
+    <parameter name="URL_Footlocker_AE" value="https://footlocker.ae/en/"/>
+    <parameter name="URL_HNM_AE" value="https://ae.hm.com/en/"/>
+    <parameter name="URL_Victoriassecret_AE" value="https://www.victoriassecret.ae/en/"/>
+    <parameter name="URL_bathandbodyworks_SA" value="https://www.bathandbodyworks.com.sa/en/"/>
+    <parameter name="URL_MotherCare_SA" value="https://www.mothercare.com.sa/en/"/>
+    <parameter name="URL_Footlocker_KW" value="https://footlocker.com.kw/en/"/>
+    <parameter name="URL_HNM_SA" value="https://sa.hm.com/en/"/>
+    <parameter name="URL_Footlocker_SA" value="https://footlocker.com.sa/en/"/>
+    <parameter name="URL_HNM_KW" value="https://kw.hm.com/en/"/>
+    <parameter name="URL_MotherCare_KW" value="https://www.mothercare.com.kw/en/"/>
+    <parameter name="URL_Potterybarn_AE" value="https://www.potterybarn.ae/en/"/>
+    <classes>
+      <class name="AlshayaExportFunctionality.Export_HNM_SA">
+        <methods>
+          <include name="afterClass"/>
+          <include name="SignInClick"/>
+          <include name="beforeTest"/>
+          <include name="beforeClass"/>
+          <include name="HandleThePopUpBox"/>
+          <include name="beforeMethod"/>
+          <include name="HomePage"/>
+          <include name="LoginPage"/>
+          <include name="tearDownFramework"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="URLLink"/>
+          <include name="setUpFramework"/>
+        </methods>
+      </class> <!-- AlshayaExportFunctionality.Export_HNM_SA -->
+      <class name="AlshayaExportFunctionality.Export_Footlocker_AE">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeTest"/>
+          <include name="LoginPage"/>
+          <include name="beforeClass"/>
+          <include name="HandleThePopUpBox"/>
+          <include name="beforeMethod"/>
+          <include name="SignInClick"/>
+          <include name="HomePage"/>
+          <include name="tearDownFramework"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="URLLink"/>
+          <include name="setUpFramework"/>
+        </methods>
+      </class> <!-- AlshayaExportFunctionality.Export_Footlocker_AE -->
+      <class name="AlshayaExportFunctionality.Export_bathandbodyworks_KW">
+        <methods>
+          <include name="HomePage"/>
+          <include name="afterClass"/>
+          <include name="beforeTest"/>
+          <include name="beforeClass"/>
+          <include name="URLLink"/>
+          <include name="beforeMethod"/>
+          <include name="tearDownFramework"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="SignInClick"/>
+          <include name="LoginPage"/>
+          <include name="setUpFramework"/>
+          <include name="HandleThePopUpBox"/>
+        </methods>
+      </class> <!-- AlshayaExportFunctionality.Export_bathandbodyworks_KW -->
+    </classes>
+  </test> <!-- Alshaya_Export_Xlsx_Report(failed) -->
+</suite> <!-- Failed suite [AlshayaGroup] -->
