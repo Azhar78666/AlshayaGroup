@@ -1,0 +1,179 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>Com</groupId>
+	<artifactId>AlshayaGroup</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+
+	<!-- This plugins help to run the testcases from TestNG.xml else we have 
+		to add on "test" each and every testcases name. -->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18.1</version>
+				<configuration>
+					<testFailureIgnore> false </testFailureIgnore>
+					<suiteXmlFiles>
+						 <suiteXmlFile>src/test/resources/runner/testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+					<forkMode>never</forkMode>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+
+
+	<dependencies>
+
+		<!-- Use for creating test cases and execute them -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.14.3</version>
+			<scope>compile</scope>
+		</dependency>
+
+
+		<!-- Use for the webDriver, It's reduce the chrome, firefox code. you can 
+			call directly Like (WebDriverManager.chromedriver().setup();) -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>3.7.1</version>
+		</dependency>
+
+
+
+		<!-- For read the ConfigProperties class data -->
+		<dependency>
+			<groupId>org.aeonbits.owner</groupId>
+			<artifactId>owner</artifactId>
+			<version>1.0.10</version>
+		</dependency>
+
+
+		<!-- For read and write excel files -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.6</version>
+		</dependency>
+
+		<!-- For read and write excel files 1.4.01 -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.6</version>
+		</dependency>
+
+
+		<!--Selenium Jar file for use the selenium functionalities -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.141.59</version>
+		</dependency>
+
+
+		<!-- Use for generate the Extent Reports -->
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>4.0.9</version>
+		</dependency>
+
+
+		<!-- Use for the send the commons-email -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-email</artifactId>
+			<version>1.5</version>
+		</dependency>
+
+		<!-- Use for the generated the Logs -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+
+
+		<!-- For read and write the FileInput and FileOutput Stream -->
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.6</version>
+		</dependency>
+
+
+		<!-- Generate the attractive Report (dependent on guice) -->
+		<dependency>
+			<groupId>org.uncommons</groupId>
+			<artifactId>reportng</artifactId>
+			<version>1.1.4</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>28.1-jre</version>
+		</dependency>
+
+
+		<!-- Generate the more attractive Report with org.uncommons, reporting -->
+		<dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+			<version>4.2.2</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/dom4j/dom4j -->
+		<!-- the flexible XML framework for Java -->
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>1.6.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.xmlbeans/xmlbeans support 
+			jar files for the generating the reports -->
+		<dependency>
+			<groupId>org.apache.xmlbeans</groupId>
+			<artifactId>xmlbeans</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml-schemas</artifactId>
+			<version>4.1.0</version>
+		</dependency>
+
+	<!--  For database testing. -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.17</version>
+		</dependency>
+
+<dependency>
+		<groupId>javax.mail</groupId>
+		<artifactId>mail</artifactId>
+		<version>1.4.7</version>
+	</dependency>
+
+
+
+	</dependencies>
+
+</project>
